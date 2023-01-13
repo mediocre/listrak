@@ -1,0 +1,28 @@
+{
+    "dependencies": {
+        "http-errors": "~2.0.0",
+        "memory-cache": "~0.2.0",
+        "request": "~2.88.0"
+    },
+    "description": "Our API allows developers to integrate with Listrak's application. It enables the seamless automation of a broad set of functionality, ranging from basic tasks to complex processes.",
+    "devDependencies": {
+        "coveralls": "*",
+        "mocha": "*",
+        "nyc": "*"
+    },
+    "keywords": [
+        "listrak",
+        "email"
+    ],
+    "license": "Apache-2.0",
+    "name": "@mediocre/listrak",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mediocre/listrak.git"
+    },
+    "scripts": {
+        "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
+        "test": "mocha --exit --reporter spec test"
+    },
+    "version": "0.1.0"
+}
